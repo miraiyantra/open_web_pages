@@ -47,13 +47,25 @@ section h2,
 section h3 {
   letter-spacing: 0.035rem;
 }
+
+
 section p {
   line-height: 1.6;
   color: #a3a3a3;
   max-width: 50rem;
   margin: 0 auto;
-  font-size: clamp(0.9rem, 0.825rem + 0.3vw, 1.2rem);
+  font-size: 20px;
 }
+
+
+
+@media (max-width: 768px) {
+      section p {
+        font-size: 10px;
+      }
+    }
+
+
 section .bg-watermark {
   color: #1f1f1f;
   font-size: clamp(6rem, 1.3333rem + 14.9333vw, 20rem);
