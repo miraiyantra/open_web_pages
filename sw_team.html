@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function redirectBasedOnDevice() {
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                // User is on a mobile device
+                window.location.href = "https://miraiyantra.github.io/open_web_pages/ehydra_team_mob.html";
+            } else {
+                // User is on a desktop device
+                window.location.href = "https://miraiyantra.github.io/open_web_pages/team_ehydra.html";
+            }
+        }
+    </script>
+</head>
+<body onload="redirectBasedOnDevice()">
+</body>
+</html>
